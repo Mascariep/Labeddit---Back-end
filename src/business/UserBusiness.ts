@@ -15,6 +15,7 @@ export class UserBusiness{
         private tokenManager: TokenManager,
         private hashManager: HashManager
     ){}
+    
     public async getAllUsers(input: GetAllUsersInputDTO){
 
         const {q, token} = input
