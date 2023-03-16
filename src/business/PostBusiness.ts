@@ -153,7 +153,7 @@ export class PostBusiness {
                 throw new BadRequestError("'content' precisa ser uma string")
             }
         }else{
-            throw new BadRequestError("Favor, informar o 'content'")
+            throw new BadRequestError("Informar o 'content'")
         }
 
         const newPost = new Post (
