@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
-import dotenv from 'dotenv' //veja como fazer essa importação na página de "Variáveis de ambiente (ENV)"
-import { Roles, TokenPayload } from '../types'
+import dotenv from 'dotenv'
+import { TokenPayload } from '../types'
 
 dotenv.config()
 
