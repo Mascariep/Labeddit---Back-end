@@ -17,4 +17,4 @@ O deploy do back-end foi feito através da plataforma render.
 # Testes Realizados:
 
 Devido ao tempo, os testes ficaram com uma % baixa, mas será corrigido com o tempo.
-![Preview](./img/coverage.png)
+![Preview](./img/coverage-test.png)
