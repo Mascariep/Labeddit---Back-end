@@ -14,14 +14,14 @@ export class TokenManagerMock {
         if (token == "token-mock-normal") {
             return {
                 id: "id-mock",
-                username: "name-mock",
+                name: "Normal-mock",
                 role: ROLE_USER.NORMAL
             }
             
         } else if (token == "token-mock-admin") {
             return {
                 id: "id-mock",
-                username: "name-mock",
+                name: "Admin-mock",
                 role: ROLE_USER.ADMIN
             }
 

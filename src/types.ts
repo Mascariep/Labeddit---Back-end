@@ -5,7 +5,7 @@ export enum ROLE_USER{
 
 export interface UserDB{
     id: string,
-    username: string,
+    name: string,
     email: string,
     password: string,
     role: ROLE_USER,
@@ -44,7 +44,7 @@ export interface CommentWithCreatorDB{
     post_id: string,
     creator:{
         creator_id: string,
-        username: string,
+        name: string,
     }
 }
 
@@ -58,7 +58,7 @@ export interface PostbyUsersDB{
     updated_at: string,
     creator: {
         id: string,
-        username: string,
+        name: string,
     }
 }
 
@@ -72,7 +72,7 @@ export interface PostWithCommentsDB{
     updated_at: string,
     creator: {
         id: string,
-        username: string,
+        name: string,
     },
     comments_post: CommentWithCreatorDB,
 }
@@ -91,6 +91,6 @@ export interface LikeDislikeCommentDB{
 
 export interface TokenPayload {
     id: string,
-	username: string,
+	name: string,
     role: ROLE_USER
 }

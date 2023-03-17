@@ -56,7 +56,7 @@ export class PostBusiness {
 
             return{
                 id: creator.id,
-                username: creator.username
+                name: creator.username
             }
         }
         return posts  
@@ -110,7 +110,7 @@ export class PostBusiness {
 
             return{
                 id: creator.id,
-                username: creator.username
+                name: creator.username
             }
         }
 
@@ -165,7 +165,7 @@ export class PostBusiness {
             created_at,
             updated_at,
             {id:creator_id,
-            username: payload.username,},
+            name: payload.name,},
             {id: '',
             content: '',
             likes: 0,
@@ -175,7 +175,7 @@ export class PostBusiness {
             post_id: '',
             creator:{
                 creator_id: '',
-                username: '',
+                name: '',
             }
             }
             )
@@ -236,7 +236,7 @@ export class PostBusiness {
             created_at,
             updated_at,
             {id:creator_id,
-            username: payload.username,},
+            name: payload.name,},
             {id: '',
             content: '',
             likes: 0,
@@ -246,7 +246,7 @@ export class PostBusiness {
             post_id: filterPostById.id,
             creator:{
                 creator_id: '',
-                username: '',
+                name: '',
             }
             }
         )
@@ -261,7 +261,7 @@ export class PostBusiness {
             filterPostById.updated_at,
             {
                 id:filterPostById.creator_id,
-                username: ''
+                name: ''
             },
             {id: '',
             content: '',
@@ -272,7 +272,7 @@ export class PostBusiness {
             post_id: '',
             creator:{
                 creator_id: '',
-                username: '',
+                name: '',
             }
             }
         )
@@ -334,7 +334,7 @@ export class PostBusiness {
             updateAt,
             {
                 id:filterPostToUpdate.creator_id,
-                username: payload.username
+                name: payload.name
             },
             {id: '',
             content: '',
@@ -345,7 +345,7 @@ export class PostBusiness {
             post_id: '',
             creator:{
                 creator_id: '',
-                username: '',
+                name: '',
             }
             }
         )
@@ -474,7 +474,7 @@ export class PostBusiness {
                 filterPostToLike.created_at,
                 filterPostToLike.updated_at,
                 {id: filterPostToLike.creator_id,
-                username: ""},
+                name: ""},
                 {id: '',
                 content: '',
                 likes: 0,
@@ -484,7 +484,7 @@ export class PostBusiness {
                 post_id: '',
                 creator:{
                     creator_id: '',
-                    username: '',
+                    name: '',
                 }
                 }
             )
@@ -536,7 +536,7 @@ export class PostBusiness {
             filterCommentToLike.created_at,
             filterCommentToLike.updated_at,
             {id: filterCommentToLike.creator_id,
-            username: ""},
+            name: ""},
             {id: '',
             content: '',
             likes: 0,
@@ -546,7 +546,7 @@ export class PostBusiness {
             post_id: '',
             creator:{
                 creator_id: '',
-                username: '',
+                name: '',
             }
             }
         )
