@@ -10,6 +10,7 @@ export class UserController{
         private userBusiness: UserBusiness,
         private userDTO: UserDTO,
     ){}
+    
     public getAllUsers = async (req:Request, res: Response)=>{
         try {
             
@@ -39,9 +40,9 @@ export class UserController{
 
     public signUp = async(req: Request, res: Response)=>{
         try {
-            const {username, email, password} = req.body
+            const {name, email, password} = req.body
             
-            const input = this.userDTO.signUp(username,email,password)
+            const input = this.userDTO.signUp(name,email,password)
 
             const output = await this.userBusiness.signUp(input)
 

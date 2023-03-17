@@ -1,4 +1,9 @@
-import { PostDB, CommentDB, LikeDislikeDB, LikeDislikeCommentDB, ROLE_USER } from "../../src/types"
+import { 
+    PostDB, 
+    CommentDB, 
+    LikeDislikeDB, 
+    LikeDislikeCommentDB, 
+    ROLE_USER } from "../../src/types"
 import { BaseDatabase } from "../../src/database/BaseDatabase"
 
 export class PostDatabaseMock extends BaseDatabase{
@@ -36,17 +41,17 @@ export class PostDatabaseMock extends BaseDatabase{
         const postsDB = await this.getAllPosts()
         const creatorsDB = [{
             id: "id-mock",
-            username: "Normal Mock",
+            name: "Normal Mock",
             email: "normal@email.com",
-            password: "hash-astrodev",
+            password: "hash-bananinha",
             created_at: expect.any(String),
             role: ROLE_USER.NORMAL
         },
         {
             id: "id-mock",
-            username: "Admin Mock",
+            name: "Admin Mock",
             email: "admin@email.com",
-            password: "hash-astrodev",
+            password: "hash-bananinha",
             created_at: expect.any(String),
             role: ROLE_USER.ADMIN
         }]
@@ -61,17 +66,17 @@ export class PostDatabaseMock extends BaseDatabase{
         const postsDB = await this.getAllPosts()
         const creatorsDB = [{
             id: "id-mock",
-            username: "Normal Mock",
+            name: "Normal Mock",
             email: "normal@email.com",
-            password: "hash-astrodev",
+            password: "hash-bananinha",
             created_at: expect.any(String),
             role: ROLE_USER.NORMAL
         },
         {
             id: "id-mock",
-            username: "Admin Mock",
+            name: "Admin Mock",
             email: "admin@email.com",
-            password: "hash-astrodev",
+            password: "hash-bananinha",
             created_at: expect.any(String),
             role: ROLE_USER.ADMIN
         }]

@@ -42,7 +42,7 @@ export class UserBusiness{
         usersDB.map((userDB)=>{ 
             const user = new User(
             userDB.id,
-            userDB.username,
+            userDB.name,
             userDB.email,
             userDB.password,
             userDB.role,
@@ -56,7 +56,7 @@ export class UserBusiness{
     }
 
     public async signUp(input: SignUpDTO){
-        const {username,email,password} = input
+        const {name,email,password} = input
 
         const id = this.idGenerator.generate()
 
@@ -70,7 +70,7 @@ export class UserBusiness{
             throw new BadRequestError("'E-mail' já cadastrado!.")
         }
 
-        if(typeof username !== "string"){
+        if(typeof name !== "string"){
             throw new BadRequestError("'Name' precisa ser uma string.")
         }
 
@@ -84,7 +84,7 @@ export class UserBusiness{
 
         const newUser = new User(
             id,
-            username,
+            name,
             email,
             passwordHash,
             ROLE_USER.NORMAL,
@@ -93,7 +93,7 @@ export class UserBusiness{
 
         const tokenPayload: TokenPayload = {
             id: newUser.getId(),
-            username: newUser.getName(),
+            name: newUser.getName(),
             role: newUser.getRole()
         }
         
@@ -140,7 +140,7 @@ export class UserBusiness{
 
             const userLogin = new User(
                 searchUserByLogin.id,
-                searchUserByLogin.username,
+                searchUserByLogin.name,
                 searchUserByLogin.email,
                 searchUserByLogin.password,
                 searchUserByLogin.role,
@@ -149,7 +149,7 @@ export class UserBusiness{
 
             const tokenPayload: TokenPayload = {
                 id: userLogin.getId(),
-                username: userLogin.getName(),
+                name: userLogin.getName(),
                 role: userLogin.getRole()
             }
             

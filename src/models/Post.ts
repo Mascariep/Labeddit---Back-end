@@ -1,4 +1,4 @@
-import { PostbyUsersDB, PostWithCommentsDB, PostDB, CommentDB, CommentWithCreatorDB, UserDB, LikeDislikeDB} from "../types";
+import { PostbyUsersDB, PostWithCommentsDB, PostDB, CommentDB, CommentWithCreatorDB, LikeDislikeDB} from "../types";
 
 export class Post {
     constructor(
@@ -11,7 +11,7 @@ export class Post {
         private updated_at: string,
         private creator: {
             id: string,
-            username: string,
+            name: string,
         },
         private comments_post: CommentWithCreatorDB,
     ){}
@@ -135,14 +135,14 @@ export class Post {
 
     public getCreator():{
         id: string,
-        username: string,
+        name: string,
     }{
         return this.creator
     }
 
     public setCreator(value:{
         id: string,
-        username: string,
+        name: string,
     }){
         this.creator = value
     }

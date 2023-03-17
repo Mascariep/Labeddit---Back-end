@@ -4,7 +4,7 @@ export interface GetAllUsersInputDTO{
 }
 
 export interface SignUpDTO{
-    username:string, 
+    name:string, 
     email:string, 
     password: string, 
 }
@@ -21,9 +21,9 @@ export class UserDTO{
         return result
     }
 
-    signUp = (username:string,email:string,password:string):SignUpDTO=>{
+    signUp = (name:string, email:string, password:string):SignUpDTO=>{
 
-        const result:SignUpDTO ={username, email, password} 
+        const result:SignUpDTO ={name, email, password} 
 
         return result
     }
