@@ -40,7 +40,7 @@ export class PostDatabase extends BaseDatabase{
 
         const commentsDB = await BaseDatabase
         .connection(PostDatabase.COMMENTS_TABLE)
-        .select("comments_posts.*","users.username")
+        .select("comments_posts.*","users.name")
         .leftJoin(PostDatabase.USERS_TABLE,"users.id","=","comments_posts.creator_id")
 
         return{
@@ -143,7 +143,7 @@ export class PostDatabase extends BaseDatabase{
     }
 
     public likeDislike = async(user_id:string, post_id: string):Promise<LikeDislikeDB | undefined>=>{
-         const [likeDislikeDB]:LikeDislikeDB[] | undefined = await BaseDatabase
+        const [likeDislikeDB]:LikeDislikeDB[] | undefined = await BaseDatabase
         .connection(PostDatabase.LIKEDISLIKE_TABLE)
         .select().where({user_id:user_id, post_id: post_id})
 
