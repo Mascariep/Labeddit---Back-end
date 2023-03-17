@@ -8,11 +8,7 @@ Realizado o desenvolvimento desde o inicio até o deploy, incluindo a documento 
 - Labeddit---Front-end: [clique aqui!](https://github.com/Mascariep/Labeddit---Front-end)
 
 # Documentação utilizada:
-Postman: [clique aqui!]('')
+Postman: [clique aqui!]('https://documenter.getpostman.com/view/24460686/2s93JzKfZR')
 
 # Testes Realizados
-Documentação utilizada:
-Postman: [clique aqui!]('')
-
-Testes Realizados
 ![Preview](./img/coverage.png)
