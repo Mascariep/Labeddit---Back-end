@@ -7,12 +7,12 @@ O deploy do back-end foi feito através da plataforma render.
 
 # Links:
 
-- Deploy Render: [clique aqui!](https://) 
+- Deploy Render: *https://https://projeto-labeddit-labenu.onrender.com*
 - Labeddit---Front-end: [clique aqui!](https://github.com/Mascariep/Labeddit---Front-end)
 
 # Documentação utilizada:
 
-Postman: [clique aqui!](https://documenter.getpostman.com/view/24460686/2s93JzKfZR)
+- Postman: [clique aqui!](https://documenter.getpostman.com/view/24460686/2s93JzKfZR)
 
 # Testes Realizados:
 
