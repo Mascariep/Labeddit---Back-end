@@ -73,8 +73,6 @@ VALUES
     ("u001", "Edipo", "edipo@email.com", "123", "ADMIN"),
 	("u002", "Pamela", "pamela@email.com", "456", "NORMAL");
 
-
-
 --Após criar um user pelo Postman, atualizei o mesmo para ser ADMIN e poder acessar
 UPDATE users SET role="ADMIN" WHERE ID = '664f0e77-fb69-4388-8955-a0f48e3e6d13';
 
@@ -110,6 +108,7 @@ SELECT * FROM users;
 --DROP TABLE - DELETAR ALGUMA TABELA
 
 -- DROP TABLE users;
+-- DROP TABLE posts;
 -- DROP TABLE posts;
 -- DROP TABLE likes_dislikes;
 -- DROP TABLE coments_post;
