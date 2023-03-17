@@ -7,7 +7,7 @@ O deploy do back-end foi feito através da plataforma render.
 
 # Links:
 
-- Deploy Render: [Link]//https://projeto-labeddit-labenu.onrender.com
+- Deploy Render: [Link](https://projeto-labeddit-labenu.onrender.com)
 - Labeddit---Front-end: [Link](https://github.com/Mascariep/Labeddit---Front-end)
 
 # Documentação utilizada:
