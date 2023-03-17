@@ -8,4 +8,8 @@
 Postman: [clique aqui!]('')
 
 # Testes Realizados
+Documentação utilizada:
+Postman: [clique aqui!]('')
+
+Testes Realizados
 ![Preview](./img/coverage.png)

@@ -97,20 +97,21 @@ VALUES
 
 SELECT * FROM users;
 
-SELECT * FROM posts;
+-- SELECT * FROM posts;
 
-SELECT * FROM likes_dislikes;
+-- SELECT * FROM likes_dislikes;
 
-SELECT * FROM comments_posts;
+-- SELECT * FROM comments_posts;
 
-SELECT * FROM likes_dislikes_comments;
+-- SELECT * FROM likes_dislikes_comments;
 
 -------------------------------------------------------------------------------
 
 --DROP TABLE - DELETAR ALGUMA TABELA
 
 -- DROP TABLE users;
-DROP TABLE posts;
+-- DROP TABLE posts;
+-- DROP TABLE posts;
 -- DROP TABLE likes_dislikes;
 -- DROP TABLE coments_post;
 -- DROP TABLE likes_dislikes_comments;
