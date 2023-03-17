@@ -111,6 +111,7 @@ SELECT * FROM users;
 
 -- DROP TABLE users;
 -- DROP TABLE posts;
+-- DROP TABLE posts;
 -- DROP TABLE likes_dislikes;
 -- DROP TABLE coments_post;
 -- DROP TABLE likes_dislikes_comments;
