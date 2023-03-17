@@ -16,8 +16,8 @@ describe("signup", () => {
     test("cadastro bem-sucedido retorna token", async () => {
         const input: SignUpDTO = {
             email: "example@email.com",
-            username: "Example Mock",
-            password: "astrodev"
+            name: "Example Mock",
+            password: "bananinha"
         }
 
         const response = await userBusiness.signUp(input)
@@ -27,8 +27,8 @@ describe("signup", () => {
     test("Deve retornar um erro caso o e-mail já esteja cadastrado", ()=>{
         const input: SignUpDTO = {
             email: "normal@email.com",
-            username: "Example Mock",
-            password: "astrodev"
+            name: "Example Mock",
+            password: "bananinha"
         }
 
         expect(async()=>{

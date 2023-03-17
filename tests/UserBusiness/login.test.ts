@@ -16,7 +16,7 @@ describe("login", () => {
     test("login bem-sucedido em conta normal retorna token", async () => {
         const input: LoginDTO = {
             email: "normal@email.com",
-            password: "astrodev"
+            password: "bananinha"
         }
 
         const response = await userBusiness.login(input)
@@ -26,7 +26,7 @@ describe("login", () => {
     test("Deve retornar um erro caso o login seja incorreto (1)", ()=>{
         const input: LoginDTO = {
             email: "@email.com",
-            password: "astrodev"
+            password: "bananinha"
         }
 
         expect(async()=>{
@@ -37,7 +37,7 @@ describe("login", () => {
     test("Deve retornar um erro caso o login seja incorreto (2)", ()=>{
         const input: LoginDTO = {
             email: "normal@email.com",
-            password: "astrode"
+            password: "bananinh"
         }
 
         expect(async()=>{

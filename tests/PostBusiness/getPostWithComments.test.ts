@@ -25,7 +25,7 @@ describe("GetPostById",()=>{
                 updated_at: expect.any(String),
                 creator: {
                     id: 'id-mock',
-                    username: 'Normal Mock'
+                    name: 'Normal Mock'
                 },
                 comments_post:[{
                     id: 'c001',
