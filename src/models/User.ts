@@ -2,7 +2,7 @@ import { UserDB, ROLE_USER } from "../types"
 export class User{
     constructor(
         private id: string,
-        private username: string,
+        private name: string,
         private email: string,
         private password: string,
         private role: ROLE_USER,
@@ -12,7 +12,7 @@ export class User{
     public toDBModel():UserDB{
         return{
             id: this.id,
-            username: this.username,
+            name: this.name,
             email: this.email,
             password: this.password,
             role: this.role,
@@ -29,11 +29,11 @@ export class User{
     }
 
     public getName():string{
-        return this.username
+        return this.name
     }
 
     public setName(value:string):void{
-        this.username = value
+        this.name = value
     }
 
     public getPassword():string{

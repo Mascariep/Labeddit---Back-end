@@ -129,7 +129,7 @@ export class PostController{
 
         const output = await this.postBusiness.updatePost(input)
 
-           res.status(201).send(output)
+            res.status(201).send(output)
         } catch (error) {
             console.log(error)
         
