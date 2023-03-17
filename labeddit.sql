@@ -93,7 +93,7 @@ VALUES
 -------------------------------------------------------------------------------
 -- SELECT * FROM - VISUALIZAÇÃO DE TODAS AS TABELAS
 
-SELECT * FROM users;
+-- SELECT * FROM users;
 
 -- SELECT * FROM posts;
 
