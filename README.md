@@ -7,14 +7,22 @@ O deploy do back-end foi feito através da plataforma render.
 
 # Links:
 
-- Deploy Render: *https://https://projeto-labeddit-labenu.onrender.com*
-- Labeddit---Front-end: [clique aqui!](https://github.com/Mascariep/Labeddit---Front-end)
+- Deploy Render: [Link]//https://projeto-labeddit-labenu.onrender.com
+- Labeddit---Front-end: [Link](https://github.com/Mascariep/Labeddit---Front-end)
 
 # Documentação utilizada:
 
-- Postman: [clique aqui!](https://documenter.getpostman.com/view/24460686/2s93JzKfZR)
+- Postman: [Link](https://documenter.getpostman.com/view/24460686/2s93JzKfZR)
 
 # Testes Realizados:
 
 Devido ao tempo, os testes ficaram com uma % baixa, mas será corrigido com o tempo.
 ![Preview](./img/coverage-test.png)
+
+## Requisitos do Back-end
+
+- [ ]  Endpoints seguindo as boas práticas HTTP
+- [ ]  Uso do ExpressJS, Typescript e SQLite
+- [ ]  Cobertura de testes (pelo menos 70%)
+- [ ]  API deployada
+- [ ]  Documentação README e POSTMAN
